@@ -25,16 +25,16 @@
 </head>
 
 <body>
-    <div id="App">
+    <div id="app">
         <header>
             <i class="logoImg fa-brands fa-spotify"></i>
         </header>
 
         <main>
             <div class="container">
-                <?php
-
-                ?>
+                <ul style="list-style-type: none">
+                    <li v-for="card in album">{{card.title}}</li>
+                </ul>
             </div>
         </main>
     </div>
