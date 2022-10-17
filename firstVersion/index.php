@@ -99,7 +99,21 @@ $disc = [
     </header>
 
     <main>
+        <div class="container">
+            <?php
+            foreach ($disc as $album) {
+            ?>
+                <div class="card">
 
+                    <img src="<?= $album['poster'] ?>" alt="<?= $album['author'] ?>">
+                    <h2><?= $album['title'] ?></h2>
+                    <h4><?= $album['author'] ?></h4>
+                    <h4><?= $album['year'] ?></h4>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
     </main>
 </body>
 
